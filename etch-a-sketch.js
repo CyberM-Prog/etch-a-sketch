@@ -6,5 +6,11 @@ for (let i = 1; i <= 256; i++) {
     container.appendChild(divs)
 }
 
-const grid =  document.querySelectorAll('.grid')
+const grid =  document.querySelectorAll('.grid');
+
+function changeColor() {
+    this.classList.add('white')
+}
+
+grid.forEach(square => square.addEventListener('mouseover', changeColor));
 
